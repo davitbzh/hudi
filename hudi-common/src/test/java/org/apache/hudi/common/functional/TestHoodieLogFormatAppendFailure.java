@@ -81,7 +81,7 @@ public class TestHoodieLogFormatAppendFailure {
 
   @AfterAll
   public static void tearDownClass() {
-    cluster.shutdown(true);
+    cluster.shutdown();
     // Force clean up the directory under which the cluster was created
     FileUtil.fullyDelete(baseDir);
   }

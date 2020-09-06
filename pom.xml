@@ -92,9 +92,10 @@
     <log4j.version>1.2.17</log4j.version>
     <slf4j.version>1.7.15</slf4j.version>
     <joda.version>2.9.9</joda.version>
-    <hadoop.version>2.7.3</hadoop.version>
-    <hive.groupid>org.apache.hive</hive.groupid>
-    <hive.version>2.3.1</hive.version>
+    <hadoop.groupid>io.hops</hadoop.groupid>
+    <hadoop.version>3.2.0.0-SNAPSHOT</hadoop.version>
+    <hive.groupid>io.hops.hive</hive.groupid>
+    <hive.version>3.0.0.5</hive.version>
     <hive.exec.classifier>core</hive.exec.classifier>
     <metrics.version>4.1.1</metrics.version>
     <prometheus.version>0.8.0</prometheus.version>

@@ -221,6 +221,14 @@
           <groupId>javax.servlet</groupId>
           <artifactId>servlet-api</artifactId>
         </exclusion>
+	<exclusion>
+	  <groupId>io.hops.hive</groupId>
+	  <artifactId>hive-llap-server</artifactId>
+	</exclusion>
+	<exclusion>
+	  <groupId>io.hops.hive</groupId>
+	  <artifactId>hive-llap-tez</artifactId>
+	</exclusion>	
       </exclusions>
     </dependency>
     <dependency>
@@ -271,6 +279,16 @@
       <artifactId>hive-jdbc</artifactId>
       <version>${hive.version}</version>
       <scope>${utilities.bundle.hive.scope}</scope>
+      <exclusions>
+	<exclusion>
+	  <groupId>io.hops.hive</groupId>
+	  <artifactId>hive-llap-server</artifactId>
+	</exclusion>
+	<exclusion>
+	  <groupId>io.hops.hive</groupId>
+	  <artifactId>hive-llap-tez</artifactId>
+	</exclusion>
+      </exclusions>
     </dependency>
 
     <dependency>

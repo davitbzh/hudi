@@ -272,7 +272,17 @@
     <!-- Hadoop -->
     <dependency>
       <groupId>${hadoop.groupid}</groupId>
-      <artifactId>hadoop-client</artifactId>
+      <artifactId>hadoop-client</artifactId> 
+      <exclusions>
+	<exclusion>
+	  <groupId>io.hops.hive</groupId>
+	  <artifactId>hive-llap-server</artifactId>
+	</exclusion>
+	<exclusion>
+	  <groupId>io.hops.hive</groupId>
+	  <artifactId>hive-llap-tez</artifactId>
+	</exclusion>
+      </exclusions>      
     </dependency>
     <dependency>
       <groupId>${hadoop.groupid}</groupId>
@@ -335,6 +345,16 @@
       <groupId>${hive.groupid}</groupId>
       <artifactId>hive-service</artifactId>
       <version>${hive.version}</version>
+      <exclusions>
+	<exclusion>
+	  <groupId>io.hops.hive</groupId>
+	  <artifactId>hive-llap-server</artifactId>
+	</exclusion>
+	<exclusion>
+	  <groupId>io.hops.hive</groupId>
+	  <artifactId>hive-llap-tez</artifactId>
+	</exclusion>
+      </exclusions>      
     </dependency>
 
     <!-- Hoodie - Test -->

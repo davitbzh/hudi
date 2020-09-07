@@ -252,6 +252,16 @@
       <artifactId>hive-service</artifactId>
       <version>${hive.version}</version>
       <scope>${spark.bundle.hive.scope}</scope>
+      <exclusions>
+	<exclusion>
+	  <groupId>io.hops.hive</groupId>
+	  <artifactId>hive-llap-server</artifactId>
+	</exclusion>
+	<exclusion>
+	  <groupId>io.hops.hive</groupId>
+	  <artifactId>hive-llap-tez</artifactId>
+	</exclusion>
+      </exclusions>
     </dependency>
 
     <dependency>

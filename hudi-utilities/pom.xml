@@ -96,16 +96,6 @@
       <groupId>org.apache.hudi</groupId>
       <artifactId>hudi-client</artifactId>
       <version>${project.version}</version>
-      <exclusions>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>
-      </exclusions>            
     </dependency>
     <dependency>
       <groupId>org.apache.hudi</groupId>
@@ -116,18 +106,10 @@
           <groupId>javax.servlet</groupId>
           <artifactId>servlet-api</artifactId>
         </exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>
         <exclusion>
-	  <groupId>io.hops</groupId>
-	  <artifactId>hops-leader-election</artifactId>
-	</exclusion>	
+          <groupId>io.hops</groupId>
+          <artifactId>hops-leader-election</artifactId>
+    	</exclusion>
       </exclusions>
     </dependency>
     <dependency>
@@ -139,14 +121,6 @@
           <groupId>javax.servlet</groupId>
           <artifactId>servlet-api</artifactId>
         </exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>
         <exclusion>
 	  <groupId>io.hops</groupId>
 	  <artifactId>hops-leader-election</artifactId>
@@ -318,15 +292,7 @@
 	  <groupId>io.hops</groupId>
 	  <artifactId>hops-leader-election</artifactId>
 	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>
-      </exclusions>      
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>${hadoop.groupid}</groupId>
@@ -352,15 +318,7 @@
 	  <groupId>io.hops</groupId>
 	  <artifactId>hops-leader-election</artifactId>
 	</exclusion>	
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>
-      </exclusions>      
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>${hadoop.groupid}</groupId>
@@ -405,14 +363,6 @@
           <groupId>org.eclipse.jetty.orbit</groupId>
           <artifactId>javax.servlet</artifactId>
         </exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>	
       </exclusions>
     </dependency>
     <dependency>
@@ -420,14 +370,6 @@
       <artifactId>hive-service</artifactId>
       <version>${hive.version}</version>
       <exclusions>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>
         <exclusion>
 	  <groupId>io.hops</groupId>
 	  <artifactId>hops-leader-election</artifactId>
@@ -448,14 +390,6 @@
 	  <groupId>io.hops</groupId>
 	  <artifactId>hops-leader-election</artifactId>
 	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>	
       </exclusions>      
     </dependency>
     <dependency>
@@ -467,18 +401,10 @@
       <scope>test</scope>
       <exclusions>      
         <exclusion>
-	  <groupId>io.hops</groupId>
-	  <artifactId>hops-leader-election</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>	
-      </exclusions>      
+          <groupId>io.hops</groupId>
+          <artifactId>hops-leader-election</artifactId>
+    	</exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.hudi</groupId>
@@ -492,15 +418,7 @@
 	  <groupId>io.hops</groupId>
 	  <artifactId>hops-leader-election</artifactId>
 	</exclusion>	
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>	
-      </exclusions>      
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.hudi</groupId>
@@ -524,16 +442,6 @@
       <version>${hive.version}</version>
       <scope>test</scope>
       <classifier>${hive.exec.classifier}</classifier>
-      <exclusions>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>
-      </exclusions>      
     </dependency>
 
     <dependency>

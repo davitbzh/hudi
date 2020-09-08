@@ -182,14 +182,6 @@
           <groupId>org.apache.parquet</groupId>
           <artifactId>parquet-hadoop-bundle</artifactId>
         </exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-server</artifactId>
-	</exclusion>
-	<exclusion>
-	  <groupId>io.hops.hive</groupId>
-	  <artifactId>hive-llap-tez</artifactId>
-	</exclusion>
       </exclusions>
     </dependency>
 

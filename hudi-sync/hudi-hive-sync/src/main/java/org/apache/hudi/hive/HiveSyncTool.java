@@ -221,7 +221,7 @@ public class HiveSyncTool extends AbstractSyncTool {
       System.exit(1);
     }
     FileSystem fs = FSUtils.getFs(cfg.basePath, new Configuration());
-    HiveConf hiveConf = new HiveConf();
+    HiveConf hiveConf = new HiveConf(true);
     hiveConf.addResource(fs.getConf());
     new HiveSyncTool(cfg, hiveConf, fs).syncHoodieTable();
   }

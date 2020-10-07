@@ -105,7 +105,7 @@ public class HoodieTestSuiteJob {
   }
 
   private static HiveConf getDefaultHiveConf(Configuration cfg) {
-    HiveConf hiveConf = new HiveConf(true);
+    HiveConf hiveConf = new HiveConf();
     hiveConf.addResource(cfg);
     return hiveConf;
   }
